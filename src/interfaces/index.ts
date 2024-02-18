@@ -1,0 +1,1 @@
+export type { ReqRes } from './http-express';

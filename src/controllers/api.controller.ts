@@ -1,22 +1,22 @@
-import { Response, Request } from "express";
+import { ReqRes } from "../interfaces/http-express";
 
-const getApi = (req:Request, res:Response)=>{
+const getApi:ReqRes = (req, res)=>{
     return res.status(200).json({"message":"GET api"});
 };
 
-const postApi = (req:Request, res:Response)=>{
+const postApi:ReqRes = (req, res)=>{
     return res.status(200).json({"message":"POST api"});
 };
 
-const putApi = (req:Request, res:Response)=>{
+const putApi:ReqRes = (req, res)=>{
     return res.status(200).json({"message":"PUT api"});
 };
 
-const patchApi = (req:Request, res:Response)=>{
+const patchApi:ReqRes = (req, res)=>{
     return res.status(200).json({"message":"Patch api"});
 };
 
-const deleteApi = (req:Request, res:Response)=>{
+const deleteApi:ReqRes = (req, res)=>{
     return res.status(200).json({"message":"POST api"});
 };
 
